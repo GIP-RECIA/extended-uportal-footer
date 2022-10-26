@@ -1,0 +1,694 @@
+{
+  "portal_template": {
+    "data": [
+      {
+        "identity": {
+          "Id": "ent_recia",
+          "name": "Netocentre",
+          "domains": [
+            "ent.recia.fr",
+            "formations-sociales.netocentre.fr",
+            "lycees.netocentre.fr",
+            "cfa.netocentre.fr",
+            "test-lycee.giprecia.net",
+            "localhost:3000"
+          ]
+        },
+        "images": [
+          {
+            "Id": "icon",
+            "name": "Netocentre",
+            "path": "/images/partners/netocentre-simple.svg",
+            "opacity": 0.3
+          },
+          {
+            "Id": "logo",
+            "name": "Netocentre",
+            "path": "/images/partners/netoCentreGIP.svg"
+          }
+        ],
+        "colors": [
+          {
+            "Id": "primary",
+            "hexa": "#25b2f3",
+            "rgb": {
+              "r": 37,
+              "g": 178,
+              "b": 243
+            }
+          },
+          {
+            "Id": "white",
+            "hexa": "#ffffff",
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          {
+            "Id": "light-grey",
+            "hexa": "#a5a5a5",
+            "rgb": {
+              "r": 165,
+              "g": 165,
+              "b": 165
+            }
+          },
+          {
+            "Id": "dark-grey",
+            "hexa": "#303030",
+            "rgb": {
+              "r": 48,
+              "g": 48,
+              "b": 48
+            }
+          }
+        ],
+        "sponsors": [
+          {
+            "Id": "val-de-loire",
+            "name": "Centre Val de Loire",
+            "url": "https://www.centre-valdeloire.fr/",
+            "logo": {
+              "path": "/images/partners/centreValLoire.svg"
+            }
+          },
+          {
+            "Id": "republique-francaise",
+            "name": "Republique Francaise",
+            "url": "https://www.prefectures-regions.gouv.fr/centre-val-de-loire",
+            "logo": {
+              "path": "/images/partners/republiqueFrancaise.svg"
+            }
+          },
+          {
+            "Id": "feder-europe",
+            "name": "FEDER Europe",
+            "url": "https://ec.europa.eu/regional_policy/fr/funding/erdf/",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "feder-centre-val-de-loire",
+            "name": "FEDER Région Centre-Val de Loire",
+            "url": "https://www.europeocentre-valdeloire.eu/",
+            "logo": {
+              "path": "/images/partners/RCVdL_FEDER.svg"
+            }
+          }
+        ]
+      },
+      {
+        "identity": {
+          "Id": "chercan",
+          "name": "Collèges du Cher",
+          "domains": [
+            "www.chercan.fr",
+            "test-clg18.giprecia.net",
+            "api.server2.local:3000"
+          ]
+        },
+        "images": [
+          {
+            "Id": "icon",
+            "name": "Chercan",
+            "path": "/images/partners/chercan-simple.svg",
+            "opacity": 0.3
+          },
+          {
+            "Id": "logo",
+            "name": "Chercan",
+            "path": "/images/partners/chercanGIP.svg"
+          }
+        ],
+        "colors": [
+          {
+            "Id": "primary",
+            "hexa": "#004899",
+            "rgb": {
+              "r": 0,
+              "g": 72,
+              "b": 153
+            }
+          },
+          {
+            "Id": "white",
+            "hexa": "#ffffff",
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          {
+            "Id": "light-grey",
+            "hexa": "#656565",
+            "rgb": {
+              "r": 101,
+              "g": 101,
+              "b": 101
+            }
+          },
+          {
+            "Id": "dark-grey",
+            "hexa": "#303030",
+            "rgb": {
+              "r": 48,
+              "g": 48,
+              "b": 48
+            }
+          }
+        ],
+        "sponsors": [
+          {
+            "Id": "cher",
+            "name": "Cher",
+            "logo": {
+              "path": "/images/partners/cher.svg"
+            }
+          },
+          {
+            "Id": "academie-orleans-tours",
+            "name": "Academie Orleans Tours",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "republique-francaise",
+            "name": "Republique Francaise",
+            "logo": {
+              "path": "/images/partners/republiqueFrancaise.svg"
+            }
+          },
+          {
+            "Id": "feder-europe",
+            "name": "FEDER Europe",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "feder-centre-val-de-loire",
+            "name": "FEDER Région Centre-Val de Loire",
+            "logo": {
+              "path": "/images/partners/RCVdL_FEDER.svg"
+            }
+          }
+        ]
+      },
+      {
+        "identity": {
+          "Id": "colleges-eureliens",
+          "name": "Collèges euréliens",
+          "domains": [
+            "www.colleges-eureliens.fr",
+            "test-clg28.giprecia.net"
+          ]
+        },
+        "images": [
+          {
+            "Id": "icon",
+            "name": "Collèges euréliens",
+            "path": "/images/partners/collegeseureliens-simple.svg",
+            "opacity": 0.3
+          },
+          {
+            "Id": "logo",
+            "name": "Collèges euréliens",
+            "path": "/images/partners/colleges28GIP.svg"
+          }
+        ],
+        "colors": [
+          {
+            "Id": "primary",
+            "hexa": "#303030",
+            "rgb": {
+              "r": 48,
+              "g": 48,
+              "b": 48
+            }
+          },
+          {
+            "Id": "white",
+            "hexa": "#ffffff",
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          {
+            "Id": "light-grey",
+            "hexa": "#656565",
+            "rgb": {
+              "r": 101,
+              "g": 101,
+              "b": 101
+            }
+          },
+          {
+            "Id": "dark-grey",
+            "hexa": "#303030",
+            "rgb": {
+              "r": 48,
+              "g": 48,
+              "b": 48
+            }
+          }
+        ],
+        "sponsors": [
+          {
+            "Id": "eure-et-loir",
+            "name": "Eure-et-Loir",
+            "logo": {
+              "path": "/images/partners/eure-et-loir.svg"
+            }
+          },
+          {
+            "Id": "academie-orleans-tours",
+            "name": "Academie Orleans Tours",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "republique-francaise",
+            "name": "Republique Francaise",
+            "logo": {
+              "path": "/images/partners/republiqueFrancaise.svg"
+            }
+          },
+          {
+            "Id": "feder-europe",
+            "name": "FEDER Europe",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "feder-centre-val-de-loire",
+            "name": "FEDER Région Centre-Val de Loire",
+            "logo": {
+              "path": "/images/partners/RCVdL_FEDER.svg"
+            }
+          }
+        ]
+      },
+      {
+        "identity": {
+          "Id": "colleges-indre",
+          "name": "Mon e-collège 36",
+          "domains": [
+            "e-college.indre.fr",
+            "test-clg36.giprecia.net"
+          ]
+        },
+        "images": [
+          {
+            "Id": "icon",
+            "name": "Mon e-collège 36",
+            "path": "/images/partners/monecollege36-simple.svg",
+            "opacity": 0.3
+          },
+          {
+            "Id": "logo",
+            "name": "Mon e-collège 36",
+            "path": "/images/partners/monecollege36GIP.svg"
+          }
+        ],
+        "colors": [
+          {
+            "Id": "primary",
+            "hexa": "#0069B3",
+            "rgb": {
+              "r": 0,
+              "g": 105,
+              "b": 179
+            }
+          },
+          {
+            "Id": "white",
+            "hexa": "#ffffff",
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          {
+            "Id": "light-grey",
+            "hexa": "#656565",
+            "rgb": {
+              "r": 101,
+              "g": 101,
+              "b": 101
+            }
+          },
+          {
+            "Id": "dark-grey",
+            "hexa": "#303030",
+            "rgb": {
+              "r": 48,
+              "g": 48,
+              "b": 48
+            }
+          }
+        ],
+        "sponsors": [
+          {
+            "Id": "indre",
+            "name": "Indre",
+            "logo": {
+              "path": "/images/partners/indre.svg"
+            }
+          },
+          {
+            "Id": "academie-orleans-tours",
+            "name": "Academie Orleans Tours",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "republique-francaise",
+            "name": "Republique Francaise",
+            "logo": {
+              "path": "/images/partners/republiqueFrancaise.svg"
+            }
+          },
+          {
+            "Id": "feder-europe",
+            "name": "FEDER Europe",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "feder-centre-val-de-loire",
+            "name": "FEDER Région Centre-Val de Loire",
+            "logo": {
+              "path": "/images/partners/RCVdL_FEDER.svg"
+            }
+          }
+        ]
+      },
+      {
+        "identity": {
+          "Id": "touraine-eschool",
+          "name": "Touraine E-school",
+          "domains": [
+            "www.touraine-eschool.fr",
+            "test-clg37.giprecia.net"
+          ]
+        },
+        "images": [
+          {
+            "Id": "icon",
+            "name": "Touraine E-school",
+            "path": "/images/partners/touraine-simple.svg",
+            "opacity": 0.3
+          },
+          {
+            "Id": "logo",
+            "name": "Touraine E-school",
+            "path": "/images/partners/touraineGIP.svg"
+          }
+        ],
+        "colors": [
+          {
+            "Id": "primary",
+            "hexa": "#25B2F3",
+            "rgb": {
+              "r": 198,
+              "g": 4,
+              "b": 64
+            }
+          },
+          {
+            "Id": "white",
+            "hexa": "#ffffff",
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          {
+            "Id": "light-grey",
+            "hexa": "#656565",
+            "rgb": {
+              "r": 101,
+              "g": 101,
+              "b": 101
+            }
+          },
+          {
+            "Id": "dark-grey",
+            "hexa": "#303030",
+            "rgb": {
+              "r": 48,
+              "g": 48,
+              "b": 48
+            }
+          }
+        ],
+        "sponsors": [
+          {
+            "Id": "touraine",
+            "name": "Touraine",
+            "logo": {
+              "path": "/images/partners/touraine.svg"
+            }
+          },
+          {
+            "Id": "academie-orleans-tours",
+            "name": "Academie Orleans Tours",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "republique-francaise",
+            "name": "Republique Francaise",
+            "logo": {
+              "path": "/images/partners/republiqueFrancaise.svg"
+            }
+          },
+          {
+            "Id": "feder-europe",
+            "name": "FEDER Europe",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "feder-centre-val-de-loire",
+            "name": "FEDER Région Centre-Val de Loire",
+            "logo": {
+              "path": "/images/partners/RCVdL_FEDER.svg"
+            }
+          }
+        ]
+      },
+      {
+        "identity": {
+          "Id": "colleges-41",
+          "name": "Collèges 41",
+          "domains": [
+            "ent.colleges41.fr",
+            "test-clg41.giprecia.net"
+          ]
+        },
+        "images": [
+          {
+            "Id": "icon",
+            "name": "Collèges 41",
+            "path": "/images/partners/colleges41-simple.svg",
+            "opacity": 0.3
+          },
+          {
+            "Id": "logo",
+            "name": "Collèges 41",
+            "path": "/images/partners/colleges41GIP.svg"
+          }
+        ],
+        "colors": [
+          {
+            "Id": "primary",
+            "hexa": "#25B2F3",
+            "rgb": {
+              "r": 0,
+              "g": 159,
+              "b": 227
+            }
+          },
+          {
+            "Id": "white",
+            "hexa": "#ffffff",
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          {
+            "Id": "light-grey",
+            "hexa": "#9D9D9D",
+            "rgb": {
+              "r": 157,
+              "g": 157,
+              "b": 157
+            }
+          },
+          {
+            "Id": "dark-grey",
+            "hexa": "#3C3C3C",
+            "rgb": {
+              "r": 60,
+              "g": 60,
+              "b": 60
+            }
+          }
+        ],
+        "sponsors": [
+          {
+            "Id": "loir-et-cher",
+            "name": "Loir et Cher",
+            "logo": {
+              "path": "/images/partners/loir-et-cher.svg"
+            }
+          },
+          {
+            "Id": "academie-orleans-tours",
+            "name": "Academie Orleans Tours",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "republique-francaise",
+            "name": "Republique Francaise",
+            "logo": {
+              "path": "/images/partners/republiqueFrancaise.svg"
+            }
+          },
+          {
+            "Id": "feder-europe",
+            "name": "FEDER Europe",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "feder-centre-val-de-loire",
+            "name": "FEDER Région Centre-Val de Loire",
+            "logo": {
+              "path": "/images/partners/RCVdL_FEDER.svg"
+            }
+          }
+        ]
+      },
+      {
+        "identity": {
+          "Id": "colleges-45",
+          "name": "Mon e-collège 45",
+          "domains": [
+            "mon-e-college.loiret.fr",
+            "test-clg45.giprecia.net"
+          ]
+        },
+        "images": [
+          {
+            "Id": "icon",
+            "name": "Mon e-collège 45",
+            "path": "/images/partners/monecollege45-simple.svg",
+            "opacity": 0.3
+          },
+          {
+            "Id": "logo",
+            "name": "Collèges 41",
+            "path": "/images/partners/monecollege45GIP.svg"
+          }
+        ],
+        "colors": [
+          {
+            "Id": "primary",
+            "hexa": "#26448A",
+            "rgb": {
+              "r": 38,
+              "g": 68,
+              "b": 138
+            }
+          },
+          {
+            "Id": "white",
+            "hexa": "#ffffff",
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          {
+            "Id": "light-grey",
+            "hexa": "#656565",
+            "rgb": {
+              "r": 101,
+              "g": 101,
+              "b": 101
+            }
+          },
+          {
+            "Id": "dark-grey",
+            "hexa": "#303030",
+            "rgb": {
+              "r": 48,
+              "g": 48,
+              "b": 48
+            }
+          }
+        ],
+        "sponsors": [
+          {
+            "Id": "loiret",
+            "name": "Loiret",
+            "logo": {
+              "path": "/images/partners/loiret.svg"
+            }
+          },
+          {
+            "Id": "academie-orleans-tours",
+            "name": "Academie Orleans Tours",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "republique-francaise",
+            "name": "Republique Francaise",
+            "logo": {
+              "path": "/images/partners/republiqueFrancaise.svg"
+            }
+          },
+          {
+            "Id": "feder-europe",
+            "name": "FEDER Europe",
+            "logo": {
+              "path": "/images/partners/FEDER_Europe.svg"
+            }
+          },
+          {
+            "Id": "feder-centre-val-de-loire",
+            "name": "FEDER Région Centre-Val de Loire",
+            "logo": {
+              "path": "/images/partners/RCVdL_FEDER.svg"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

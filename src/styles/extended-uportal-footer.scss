@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 5vw;
+  align-items: center;
+  background-color: var(--ext-footer-tpl-bg-collor, #cccccc);
+  section {
+    flex: 0 1 auto;
+    width: fit-content;
+    &:nth-child(1) {
+      flex: 1 1 auto;
+      img {
+        height: var(--ext-footer-tpl-logo-height, 50px);
+      }
+    }
+    img {
+      height: var(--ext-footer-tpl-logo-sponsor, 30px);
+      margin: 5px;
+    }
+  }
+}

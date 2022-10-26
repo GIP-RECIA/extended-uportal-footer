@@ -7,8 +7,8 @@ const BundleAnalyzerPlugin =
 
 let config = {
   entry: {
-    'my-element': './src/my-element.ts',
-    'my-element.min': './src/my-element.ts',
+    'extended-uportal-footer': './src/extended-uportal-footer.ts',
+    'extended-uportal-footer.min': './src/extended-uportal-footer.ts',
   },
   devtool: 'source-map',
   output: {
@@ -54,7 +54,7 @@ let config = {
     new Dotenv(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      chunks: ['my-element'],
+      chunks: ['extended-uportal-footer'],
       template: './samples/index.html',
     }),
   ],

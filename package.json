@@ -1,9 +1,9 @@
 {
-  "name": "lit-webpack-starter",
-  "version": "0.2.0",
+  "name": "@gip-recia/extended-uportal-footer",
+  "version": "0.1.0",
   "description": "A blank starter repo for lit + webpack + eslint + misc.",
   "author": "Grégory Brousse <pro@gregory-brousse.fr",
-  "main": "/dist/index.js",
+  "main": "/dist/js/extended-uportal-footer.js",
   "dependencies": {
     "@babel/runtime": "^7.19.4",
     "@lit/localize": "^0.11.4",
@@ -59,7 +59,7 @@
     "_run-final": "concurrently --kill-others \"npm run _serve-api\" \"npm run _serve-final\" ",
     "_serve-dev": "webpack-dev-server --mode development",
     "_serve-final": "webpack-dev-server --mode production",
-    "_serve-api": "json-server --watch ./samples/api.json",
+    "_serve-api": "json-server ./samples/api/api.json",
     "_dev": "webpack --mode development",
     "_build": "webpack --mode production",
     "_profiling": "webpack --mode production --env profiling=true",
