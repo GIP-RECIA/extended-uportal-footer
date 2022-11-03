@@ -21,6 +21,9 @@ export class MyElement extends LitElement {
 
   constructor() {
     super();
+    if (this.domain === '') {
+      this.domain = window.document.domain;
+    }
   }
 
   protected willUpdate(): void {
