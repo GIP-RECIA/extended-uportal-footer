@@ -1,7 +1,7 @@
 footer {
   display: flex;
   flex-direction: row;
-  padding: 0px 5vw;
+  padding: 0px 10vw;
   align-items: center;
   background-color: var(--ext-footer-tpl-bg-collor, #cccccc);
   section {
@@ -10,12 +10,19 @@ footer {
     &:nth-child(1) {
       flex: 1 1 auto;
       img {
-        height: var(--ext-footer-tpl-logo-height, 40px);
+        max-height: var(--ext-footer-tpl-logo-height, 40px);
+        max-width: var(--ext-footer-tpl-logo-height, 200px);
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
       }
     }
     img {
-      height: var(--ext-footer-tpl-logo-sponsor, 30px);
+      max-height: var(--ext-footer-tpl-logo-sponsor, 30px);
       margin: 5px;
     }
+  }
+  @media screen and (max-width: 768px) {
+    justify-content: center;
   }
 }
