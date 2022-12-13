@@ -33,7 +33,6 @@ export class MyElement extends LitElement {
   }
 
   private async _getTemplate() {
-    console.warn('_getTemplate', this._tplApiUrl(), this.domain);
     this.template = await templateService.get(this._tplApiUrl(), this.domain);
   }
 
@@ -51,7 +50,6 @@ export class MyElement extends LitElement {
   }
 
   render(): TemplateResult {
-    console.log('render');
     return html` <footer>
       <section>
         ${this?.template
