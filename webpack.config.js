@@ -1,10 +1,16 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const PACKAGE = require('./package.json');
 
+const currentDate = new Date().toLocaleString('en-US');
+const banner = () => {
+  return `package : ${PACKAGE.name}\nversion : ${PACKAGE.version}\nauthor : ${PACKAGE.author}\nbuild time : ${currentDate}`;
+};
 let config = {
   entry: {
     'extended-uportal-footer': './src/extended-uportal-footer.ts',
@@ -56,6 +62,9 @@ let config = {
       filename: 'index.html',
       chunks: ['extended-uportal-footer'],
       template: './samples/index.html',
+    }),
+    new webpack.BannerPlugin({
+      banner: banner,
     }),
   ],
   optimization: {
