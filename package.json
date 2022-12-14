@@ -1,6 +1,6 @@
 {
   "name": "@gip-recia/extended-uportal-footer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A blank starter repo for lit + webpack + eslint + misc.",
   "author": "Grégory Brousse <pro@gregory-brousse.fr",
   "main": "/dist/js/extended-uportal-footer.js",
@@ -66,6 +66,11 @@
     "_fortest": "webpack --mode production --env fortest=true",
     "_lint": "eslint . --ext .ts",
     "extractLocales": "lit-localize extract",
-    "buildLocales": "lit-localize build"
+    "buildLocales": "lit-localize build",
+    "_git-add-tag": "git tag -af v$npm_package_version -m \"Version $npm_package_version\"",
+    "_git-push-tag": "git push --tags",
+    "git-tag": "npm run _git-add-tag && npm run _git-push-tag",
+    "_github-create-release": "gh release create v$npm_package_version './dist/js/*.js'--draft --generate-notes",
+    "github-release": "build && git-tag && _github-create-release"
   }
 }
