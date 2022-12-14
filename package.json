@@ -70,7 +70,7 @@
     "_git-add-tag": "git tag -af v$npm_package_version -m \"Version $npm_package_version\"",
     "_git-push-tag": "git push --tags",
     "git-tag": "npm run _git-add-tag && npm run _git-push-tag",
-    "_github-create-release": "gh release create v$npm_package_version './dist/js/*.js'--draft --generate-notes",
-    "github-release": "build && git-tag && _github-create-release"
+    "_github-create-release": "gh release create v$npm_package_version ./dist/js/*.js --draft --generate-notes",
+    "github-release": "npm run build && npm run _github-create-release"
   }
 }
