@@ -61,7 +61,7 @@ export default class templateService {
             console.error('Incorrect template datas', logo, color);
           }
         } else {
-          console.error('Template API return no result', currenTemplate);
+          console.error('No template found for ' + domain, templates.data);
         }
       }
     } catch (err) {

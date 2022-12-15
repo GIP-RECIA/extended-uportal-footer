@@ -1,4 +1,11 @@
-import { html, LitElement, css, unsafeCSS, TemplateResult } from 'lit';
+import {
+  html,
+  LitElement,
+  css,
+  unsafeCSS,
+  TemplateResult,
+  PropertyValueMap,
+} from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';
 import templateService, { template } from '@services/templateService';
@@ -24,6 +31,24 @@ export class MyElement extends LitElement {
     if (this.domain === '') {
       this.domain = window.document.domain;
     }
+  }
+
+  protected shouldUpdate(
+    _changedProperties: PropertyValueMap<any> | Map<PropertyKey, unknown>
+  ): boolean {
+    if (
+      _changedProperties.has('domain') ||
+      _changedProperties.has('portalPath') ||
+      _changedProperties.has('templateApiUrl')
+    ) {
+      this._getTemplate();
+      return false;
+    }
+    if (_changedProperties.has('template') && this.template !== null) {
+      return true;
+    }
+    this._getTemplate();
+    return false;
   }
 
   protected willUpdate(): void {
