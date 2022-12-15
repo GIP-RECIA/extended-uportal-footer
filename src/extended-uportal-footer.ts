@@ -51,14 +51,11 @@ export class MyElement extends LitElement {
     return false;
   }
 
-  protected willUpdate(): void {
-    if (this.template === null) {
-      this._getTemplate();
-    }
-  }
-
   private async _getTemplate() {
-    this.template = await templateService.get(this._tplApiUrl(), this.domain);
+    const template = await templateService.get(this._tplApiUrl(), this.domain);
+    if (template !== null) {
+      this.template = template;
+    }
   }
 
   private _tplApiUrl() {
