@@ -8,6 +8,7 @@ import {
 } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';
+import pathHelper from '@helpers/pathHelper';
 import templateService, { template } from '@services/templateService';
 import scss from '@styles/extended-uportal-footer.scss';
 
@@ -66,9 +67,8 @@ export class MyElement extends LitElement {
       : '';
   }
 
-  private _makeUrl(path: string, domain = ''): string {
-    const protocol = this.debug ? 'http' : 'https';
-    return `${protocol}://${domain == '' ? this.domain : domain}${path}`;
+  private _makeUrl(path: string): string {
+    return pathHelper.getUrl(path, this.domain, this.debug);
   }
 
   render(): TemplateResult {
