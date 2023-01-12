@@ -7,7 +7,7 @@ footer {
     flex-direction: row;
     padding: 0px 10vw;
     align-items: center;
-    background-color: var(--ext-footer-tpl-bg-collor, #cccccc);
+    background-color: var(--ext-footer-tpl-bg-color, #cccccc);
     div {
       flex: 0 1 auto;
       width: fit-content;
@@ -32,7 +32,7 @@ footer {
     flex-direction: row;
     padding: 0px 10vw;
     justify-content: flex-end;
-    background-color: var(--ext-footer-tpl-bg-collor, #303030);
+    background-color: var(--ext-footer-tpl-links-bg-color, #303030);
     font-size: 14px;
     color: #ffffff;
     & > * {
