@@ -20,8 +20,16 @@
     </style>
   </head>
   <body>
+    <h3>Basic</h3>
     <extended-uportal-footer
       domain="localhost:3000"
+      debug="true"
+    ></extended-uportal-footer>
+    <h3>With links</h3>
+    <extended-uportal-footer
+      domain="localhost:3000"
+      rgaa="partiellement"
+      links='[{"title":"Accessibilité : partiellement conforme"},{"title":"CGU","href":"/files/textes/droits_usage.html"},{"title":"Apereo.org","href":"https://www.apereo.org/"},{"title":"ESUP-Portail","href":"https://www.esup-portail.org/"}]'
       debug="true"
     ></extended-uportal-footer>
   </body>

@@ -13,7 +13,7 @@ import templateService, { template } from '@services/templateService';
 import scss from '@styles/extended-uportal-footer.scss';
 
 @customElement('extended-uportal-footer')
-export class MyElement extends LitElement {
+export class ExtendedUportalFooter extends LitElement {
   @property({ type: String })
   domain = '';
   @property({ type: String, attribute: 'portal-path' })
@@ -24,6 +24,8 @@ export class MyElement extends LitElement {
   templateApiPath = process.env.APP_TPL_API_PATH ?? '';
   @property({ type: Object })
   template: template | null = null;
+  @property({ type: Array })
+  links: { title: string; href?: string }[] | null = null;
   @property({ type: Boolean })
   debug = false;
 
@@ -73,22 +75,25 @@ export class MyElement extends LitElement {
 
   render(): TemplateResult {
     return html` <footer>
-      <section>
-        ${this?.template
-          ? this._renderLogo(
-              this.template?.name,
-              this._makeUrl(this.portalPath),
-              this.template?.logoPath
-            )
-          : ''}
+      <section id="brand">
+        <div>
+          ${this?.template
+            ? this._renderLogo(
+                this.template?.name,
+                this._makeUrl(this.portalPath),
+                this.template?.logoPath
+              )
+            : ''}
+        </div>
+        ${this.template?.sponsors
+          ? repeat(this.template.sponsors, (sponsor) => {
+              return html`<div>
+                ${this._renderLogo(sponsor.name, sponsor.url, sponsor.logoPath)}
+              </div>`;
+            })
+          : html``}
       </section>
-      ${this.template?.sponsors
-        ? repeat(this.template.sponsors, (sponsor) => {
-            return html`<section>
-              ${this._renderLogo(sponsor.name, sponsor.url, sponsor.logoPath)}
-            </section>`;
-          })
-        : html``}
+      <slot name="links"> ${this._renderLinks()} </slot>
     </footer>`;
   }
 
@@ -98,6 +103,26 @@ export class MyElement extends LitElement {
         <img src="${this._makeUrl(imgPath)}" alt="${name}" />
       </a>
     `;
+  }
+
+  _renderLinks() {
+    return this.links
+      ? html`
+          ${this.links
+            ? repeat(this.links, (link) => {
+                return link?.href
+                  ? html` <a
+                      target="_blank"
+                      href="${this._makeUrl(link.href)}"
+                      title="${link.title}"
+                      >${link.title}</a
+                    >`
+                  : html`<span>${link.title}</span>`;
+              })
+            : html``}
+          <span>@${this.template?.name}</span>
+        `
+      : html``;
   }
 
   static styles = css`
