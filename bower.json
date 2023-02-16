@@ -1,0 +1,15 @@
+{
+  "name": "extended-uportal-footer",
+  "description": "Configurable footer element make to be used with GIP Recia uPortal",
+  "license": "Apache-2.0",
+  "keywords": [
+    "uportal"
+  ],
+  "ignore": [
+    "README.md",
+    "composer.json",
+    "package.json",
+    ".npmignore",
+    "CHANGELOG.md"
+  ]
+}
