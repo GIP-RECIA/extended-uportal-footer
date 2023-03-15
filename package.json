@@ -1,6 +1,6 @@
 {
   "name": "@gip-recia/extended-uportal-footer",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A blank starter repo for lit + webpack + eslint + misc.",
   "author": "Grégory Brousse <pro@gregory-brousse.fr",
   "licenses": "Apache-2.0",
